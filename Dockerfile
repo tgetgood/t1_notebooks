@@ -51,6 +51,7 @@ RUN cd $HOME/work;\
                 sos-sas==0.9.12.3 \
                 sos-julia==0.9.12.1 \
                 sos-javascript==0.9.12.2 \
+								sos-r==0.9.12.2 \
                 scipy \
                 plotly \
                 dash \
@@ -60,7 +61,7 @@ RUN cd $HOME/work;\
                 dash-renderer \
                 flask; \
     python -m sos_notebook.install;\
-    git clone https://github.com/qMRLab/t1_notebooks.git;                             \
+    git clone https://github.com/tgetgood/t1_notebooks.git;                             \
     cd t1_notebooks;\
     git clone https://github.com/neuropoly/qMRLab.git;   \
     cd qMRLab; \
